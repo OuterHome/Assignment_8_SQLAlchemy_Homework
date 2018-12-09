@@ -14,9 +14,15 @@ from dateutil.relativedelta import relativedelta as rd
 ## The `/api/v1.0/stations` route returns a JSON list of all stations from the database.
 ## The `/api/v1.0/tobs` route returns dates and temp observations for the previous year.
 ## The `/api/v1.0/<start>` route returns a JSON list of the min, avg, and max temp for a
-#  given start date and all subsequent dates.
+#  given start date and all subsequent dates in the database.
 ## The `/api/v1.0/<start>/<end>` route returns a JSON list of the min, avg, and max temp
-#  for all dates greater than or equal to the start date.
+#  for all dates greater than or equal to the user-input start date and less than or equal
+#  to the user-input end date.
+## The '/api/v1.0/text/<start>' route returns prettier JSON verbiage of the 
+# min, avg, and max temp for a user-input start date and all subsequent dates in the database.
+## The `/api/v1.0/text/<start>/<end>` route returns prettier JSON verbiage of the min, avg, and max temp
+#  for all dates greater than or equal to the user-input start date and less than or equal
+#  to the user-input end date.
 #################################################
 # Database Setup
 #################################################
